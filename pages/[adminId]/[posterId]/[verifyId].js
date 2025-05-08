@@ -30,10 +30,11 @@ export async function getServerSideProps({
 
   const device = isMobileView ? "phone" : isTabletView ? "ipad" : "desktop";
 
-  const url = `${API_URL}/${site}/verify/${adminId}/${posterId}/${verifyId}/${device}`;
+  const url = `${API_URL}/${site}/${adminId}/${posterId}/${verifyId}/${device}`;
 
   const res = await fetch(url);
   const data = await res.json();
+console.log("data ", data, "url", url);
 
   if (data?.success !== "exists") {
     return {
