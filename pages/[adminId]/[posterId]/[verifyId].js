@@ -1,7 +1,7 @@
-import Header from "../../../../components/Header";
-import Content from "../../../../components/Content";
-import Footer from "../../../../components/Footer";
-import { API_URL, site } from "../../../../config";
+import {API_URL, site} from "../../../config/index";
+import Header from "../../../components/Header";
+import Content from "../../../components/Content";
+import Footer from "../../../components/Footer";
 export default function MainPage() {
   return (
     <div className="">
